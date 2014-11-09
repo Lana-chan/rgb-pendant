@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2014-10-28 19:26:43
+
+BeginCmp
+TimeStamp = /544FDC2F;
+Reference = IC1;
+ValeurCmp = ATTINY85-P;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE22A;
+Reference = LED1;
+ValeurCmp = LEDS2_RCGB;
+IdModule  = LED5_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE40B;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE2B8;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE2C7;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE2DB;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /544FE4C8;
+Reference = SW1;
+ValeurCmp = SPST;
+IdModule  = SparkFun-Electromechanical-TACTILE-PTH-SIDE;
+EndCmp
+
+EndListe
