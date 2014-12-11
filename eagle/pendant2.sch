@@ -4083,7 +4083,7 @@ type 0309, grid 2.5 mm</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RGB-CC-THRU" device="CLEAR"/>
-<part name="SV1" library="con-lstb" deviceset="MA03-2" device=""/>
+<part name="ICSP" library="con-lstb" deviceset="MA03-2" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0207/2V" value="220"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="0207/2V" value="1k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0207/2V" value="220"/>
@@ -4102,7 +4102,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="GND4" gate="1" x="33.02" y="5.08"/>
 <instance part="P+1" gate="VCC" x="7.62" y="60.96"/>
 <instance part="D1" gate="G$1" x="81.28" y="12.7"/>
-<instance part="SV1" gate="1" x="25.4" y="15.24"/>
+<instance part="ICSP" gate="1" x="25.4" y="15.24" rot="R180"/>
 <instance part="R1" gate="G$1" x="68.58" y="17.78"/>
 <instance part="R2" gate="G$1" x="68.58" y="12.7"/>
 <instance part="R3" gate="G$1" x="68.58" y="7.62"/>
@@ -4142,7 +4142,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="7.62" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="ICSP" gate="1" pin="2"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -4161,7 +4161,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="93.98" y1="12.7" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="ICSP" gate="1" pin="6"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="33.02" y1="12.7" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
 </segment>
@@ -4186,7 +4186,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="ICSP" gate="1" pin="5"/>
 <wire x1="17.78" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
 <label x="10.16" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -4203,14 +4203,14 @@ type 0309, grid 2.5 mm</description>
 <label x="40.64" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="6"/>
-<wire x1="17.78" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
-<label x="10.16" y="17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
 <label x="53.34" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ICSP" gate="1" pin="4"/>
+<wire x1="33.02" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
+<label x="35.56" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -4225,9 +4225,9 @@ type 0309, grid 2.5 mm</description>
 <label x="53.34" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="3"/>
-<wire x1="33.02" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
-<label x="35.56" y="15.24" size="1.778" layer="95"/>
+<pinref part="ICSP" gate="1" pin="1"/>
+<wire x1="17.78" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<label x="10.16" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -4237,7 +4237,7 @@ type 0309, grid 2.5 mm</description>
 <label x="40.64" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="4"/>
+<pinref part="ICSP" gate="1" pin="3"/>
 <wire x1="17.78" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 <label x="10.16" y="15.24" size="1.778" layer="95"/>
 </segment>
