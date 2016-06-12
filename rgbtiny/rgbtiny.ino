@@ -50,7 +50,7 @@ void loop() {
     case 2: // rgb cycle
       goCycle(rgbFade,sizeof(rgbFade)/3);
       break;
-    case 4: // rgb blink
+    case 3: // rgb blink
       goBlink(rgbFade,sizeof(rgbFade)/3);
     default:
       break;
